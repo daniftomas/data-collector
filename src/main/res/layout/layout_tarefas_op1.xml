@@ -1,0 +1,1422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.exatronic.ActivityTarefasOP1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/logoutOPsButton"
+            style="@style/BotaoLogout"
+            android:onClick="logout"
+            android:text="logout" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#3F51B5">
+
+                <!-- info da exatronic-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:orientation="horizontal"
+                    android:background="#536DFE">
+
+                    <ImageView
+                        android:id="@+id/icon2"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:src="@drawable/exatronic_ico"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Produção"
+                        android:layout_gravity="bottom"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_com_TarefasOP1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/OP1button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:onClick="voltarOP"
+                        android:text="OP "
+                        android:background="#FFFFFF"
+                        />
+
+                    <Button
+                        android:id="@+id/buttonTarefa1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:onClick="showOP1Tarefa1"
+                        android:text="Tarefa 4" />
+
+                    <Button
+                        android:id="@+id/buttonTarefa2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP1Tarefa2"
+                        android:text="Tarefa 5" />
+
+                    <Button
+                        android:id="@+id/buttonTarefa3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP1Tarefa3"
+                        android:text="Tarefa 9" />
+                    <Button
+                        android:id="@+id/buttonTarefa4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP1Tarefa4"
+                        android:text="Tarefa 13"/>
+
+                    <Button
+                        android:id="@+id/buttonTarefa5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP1Tarefa5"
+                        android:text="Tarefa 14"/>
+
+                    <Button
+                        android:id="@+id/buttonTarefa6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP1Tarefa6"
+                        android:text="Tarefa 16"/>
+
+                    <Button
+                        android:id="@+id/buttonTarefa7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP1Tarefa7"
+                        android:text="Tarefa 20"/>
+                    <Button
+                        android:id="@+id/buttonTarefa8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP1Tarefa8"
+                        android:text="Tarefa 21"/>
+                    <Button
+                        android:id="@+id/buttonTarefa9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP1Tarefa9"
+                        android:text="Tarefa 23"/>
+
+                    <Button
+                        android:id="@+id/buttonTarefa10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP1Tarefa10"
+                        android:text="Tarefa 24"/>
+                    <Button
+                        android:id="@+id/buttonTarefa11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP1Tarefa11"
+                        android:text="Tarefa 25"/>
+                    <Button
+                        android:id="@+id/buttonTarefa12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP1Tarefa12"
+                        android:text="Tarefa 28"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!-- LAYOUT INICIAL E VISIVEL-->
+            <RelativeLayout
+                android:id="@+id/layoutOP1_Tarefa"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:visibility="visible">
+
+                <!-- titulo das Tarefas -->
+                <TextView
+                    android:id="@+id/tituloOP1_Tarefa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    android:text="Escolha uma Tarefa" />
+
+                <TextView
+                    android:id="@+id/logoutTextTarefa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:id="@+id/barra"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP1_Tarefa"
+                    android:background="#212121" />
+
+                <!-- instruções da escolha Tarefa -->
+                <TextView
+                    android:id="@+id/rulesTarefa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/barra"
+                    android:paddingTop="15dp"
+                    style="@style/rulesText"
+                    android:textSize="21sp"
+                    android:text="->Modelo 1\n \n->Colocar Componente A \n \n->Colocar componente B e C \n \n->Passar em THT I \n \n->Rework pós-THT I \n \n->Limpeza pós-THT I \n \n->Colocar componente D \n \n->Rework Pós-THT II e Limpeza \n \n->Despainelizar\n \n->Colocar Etiqueta no modelo\n \n->Realizar Testes\n \n->Inspeção Visual\n \n->Embalamento" />
+
+            </RelativeLayout>
+
+            <!-- LAYOUT DA TAREFA 1 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP1_Tarefa1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#FFFFFF"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- titulo da Tarefa1 -->
+                <TextView
+                    android:id="@+id/tituloOP1_Tarefa1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    android:text="Tarefa 4 - Colocar Componente A" />
+
+                <TextView
+                    android:id="@+id/logoutTextTarefa1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:id="@+id/barraOP1_Tarefa1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP1_Tarefa1"
+                    android:background="#212121" />
+
+                <!-- instruções de Tarefa 1 -->
+                <TextView
+                    android:id="@+id/rulesOP1_Tarefa1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/barraOP1_Tarefa1"
+                    style="@style/tiltleRulesText"
+                    android:text="Instruções: "/>
+
+                <TextView
+                    android:id="@+id/rulesLeftOP1_Tarefa1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP1_Tarefa1"
+                    style="@style/rulesText"
+                    android:text="1º - Colocar Componente A" />
+
+
+                <TextView
+                    android:id="@+id/rulesRightOP1_Tarefa1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP1_Tarefa1"
+                    android:layout_marginLeft="450dp"
+                    style="@style/rulesText"
+                    android:text="2º - Confirmar encaixe das Componente A."
+                    />
+
+                <ImageView
+                    android:layout_width="980dp"
+                    android:layout_height="400dp"
+                    android:layout_below="@id/rulesLeftOP1_Tarefa1"
+                    android:layout_marginTop="16dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/rcpc8_3v2_rj45"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/OP1_tarefa1_startbutton"
+                        style="@style/BotaoStart"
+                        android:onClick="startTarefa1"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa1_pausebutton"
+                        style="@style/BotaoPause"
+                        android:onClick="pauseTarefa1"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa1_stopbutton"
+                        style="@style/BotaoStop"
+                        android:onClick="stopTarefa1"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <!-- LAYOUT DA TAREFA 2-->
+            <RelativeLayout
+                android:id="@+id/layoutOP1_Tarefa2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#FFFFFF"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- titulo da Tarefa 2 -->
+                <TextView
+                    android:id="@+id/tituloOP1_Tarefa2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    android:text="Tarefa 5 - Colocar Slide Switch e Fichas Connblock" />
+
+                <TextView
+                    android:id="@+id/logoutTextTarefa2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:id="@+id/barraOP1_Tarefa2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP1_Tarefa2"
+                    android:background="#212121" />
+
+                <!-- instruções de tarefa 2 -->
+                <TextView
+                    android:id="@+id/rulesOP1_Tarefa2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/barraOP1_Tarefa2"
+                    style="@style/tiltleRulesText"
+                    android:text="Instruções: " />
+
+                <TextView
+                    android:id="@+id/rulesLeftOP1_Tarefa2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP1_Tarefa2"
+                    style="@style/rulesText"
+                    android:text="1º - Colocar Slide Switch e Fichas Connblock"
+                    />
+
+                <TextView
+                    android:id="@+id/rulesRightOP1_Tarefa2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP1_Tarefa2"
+                    android:layout_marginLeft="450dp"
+                    style="@style/rulesText"
+                    android:text="2º - Confirmar encaixes do Slide Switch e Fichas Connblock."
+                    />
+
+                <ImageView
+                    android:layout_width="980dp"
+                    android:layout_height="400dp"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/rulesLeftOP1_Tarefa2"
+                    android:src="@drawable/rcpc8_3v2_ss_cb"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/OP1_tarefa2_startbutton"
+                        style="@style/BotaoStart"
+                        android:onClick="startTarefa2"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa2_pausebutton"
+                        style="@style/BotaoPause"
+                        android:onClick="pauseTarefa2"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa2_stopbutton"
+                        style="@style/BotaoStop"
+                        android:onClick="stopTarefa2"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <!-- LAYOUT DA TAREFA 3 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP1_Tarefa3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#FFFFFF"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- titulo da Tarefa3 -->
+                <TextView
+                    android:id="@+id/tituloOP1_Tarefa3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    android:text="Tarefa 9 - Passar na Onda" />
+
+                <!-- login Text-->
+
+                <TextView
+                    android:id="@+id/logoutTextTarefa3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:id="@+id/barraOP1_Tarefa3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP1_Tarefa3"
+                    android:background="#212121" />
+
+                <!-- instruções de Tarefa 3 -->
+                <TextView
+                    android:id="@+id/rulesOP1_Tarefa3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/barraOP1_Tarefa3"
+                    style="@style/tiltleRulesText"
+                    android:text="Instruções: " />
+
+                <TextView
+                    android:id="@+id/rulesLeftOP1_Tarefa3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP1_Tarefa3"
+                    style="@style/rulesText"
+                    android:text="1º - Colocar painel no conveyor"
+                    />
+
+                <TextView
+                    android:id="@+id/rulesRightOP1_Tarefa3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesLeftOP1_Tarefa3"
+                    style="@style/rulesText"
+                    android:text="2º - Confirmar encaixe dos switches a soldar"
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/OP1_tarefa3_startbutton"
+                        style="@style/BotaoStart"
+                        android:onClick="startTarefa3"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa3_pausebutton"
+                        style="@style/BotaoPause"
+                        android:onClick="pauseTarefa3"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa3_stopbutton"
+                        style="@style/BotaoStop"
+                        android:onClick="stopTarefa3"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <!-- LAYOUT DA TAREFA 4 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP1_Tarefa4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#FFFFFF"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- titulo da Tarefa4 -->
+                <TextView
+                    android:id="@+id/tituloOP1_Tarefa4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    android:text="Tarefa 13 - Rework Pós-Onda" />
+
+                <TextView
+                    android:id="@+id/logoutTextTarefa4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:id="@+id/barraOP1_Tarefa4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP1_Tarefa4"
+                    android:background="#212121" />
+
+                <!-- instruções de Tarefa 4 -->
+                <TextView
+                    android:id="@+id/rulesOP1_Tarefa4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/barraOP1_Tarefa4"
+                    style="@style/tiltleRulesText"
+                    android:text="Instruções: " />
+
+                <TextView
+                    android:id="@+id/rulesLeftOP1_Tarefa4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP1_Tarefa4"
+                    style="@style/rulesText"
+                    android:text="1º - Verificar soldadura e efetuar correção."
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/OP1_tarefa4_startbutton"
+                        style="@style/BotaoStart"
+                        android:onClick="startTarefa4"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa4_pausebutton"
+                        style="@style/BotaoPause"
+                        android:onClick="pauseTarefa4"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa4_stopbutton"
+                        style="@style/BotaoStop"
+                        android:onClick="stopTarefa4"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <!-- LAYOUT DA TAREFA 5 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP1_Tarefa5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#FFFFFF"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- titulo da Tarefa1 -->
+                <TextView
+                    android:id="@+id/tituloOP1_Tarefa5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    android:text="Tarefa 14 - Limpeza pós Onda" />
+
+                <TextView
+                    android:id="@+id/logoutTextTarefa5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:id="@+id/barraOP1_Tarefa5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP1_Tarefa5"
+                    android:background="#212121" />
+
+                <!-- instruções de Tarefa 5 -->
+                <TextView
+                    android:id="@+id/rulesOP1_Tarefa5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/barraOP1_Tarefa5"
+                    style="@style/tiltleRulesText"
+                    android:text="Instruções: " />
+
+                <TextView
+                    android:id="@+id/rulesLeftOP1_Tarefa5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP1_Tarefa5"
+                    style="@style/rulesText"
+                    android:text="1º - Seguir instruções de limpeza de material, utilizando as devidas proteções para execução da tarefa "
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/OP1_tarefa5_startbutton"
+                        style="@style/BotaoStart"
+                        android:onClick="startTarefa5"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa5_pausebutton"
+                        style="@style/BotaoPause"
+                        android:onClick="pauseTarefa5"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa5_stopbutton"
+                        style="@style/BotaoStop"
+                        android:onClick="stopTarefa5"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <!-- LAYOUT DA TAREFA 6 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP1_Tarefa6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#FFFFFF"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- titulo da Tarefa6 -->
+                <TextView
+                    android:id="@+id/tituloOP1_Tarefa6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    android:text="Tarefa 16 - Colocar Rotary Switches" />
+
+                <TextView
+                    android:id="@+id/logoutTextTarefa6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:id="@+id/barraOP1_Tarefa6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP1_Tarefa6"
+                    android:background="#212121" />
+
+                <!-- instruções de Tarefa 6 -->
+                <TextView
+                    android:id="@+id/rulesOP1_Tarefa6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/barraOP1_Tarefa6"
+                    style="@style/tiltleRulesText"
+                    android:text="Instruções: " />
+
+                <TextView
+                    android:id="@+id/rulesLeftOP1_Tarefa6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP1_Tarefa6"
+                    style="@style/rulesText"
+                    android:text="1º - Colocar Rottary Switches"
+                    />
+
+
+                <TextView
+                    android:id="@+id/rulesRightOP1_Tarefa6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP1_Tarefa6"
+                    android:layout_marginLeft="450dp"
+                    style="@style/rulesText"
+                    android:text="2º - Confirmar encaixe de Rotary Switches e orientação dos mesmos."
+                    />
+
+                <ImageView
+                    android:layout_width="980dp"
+                    android:layout_height="400dp"
+                    android:layout_below="@id/rulesLeftOP1_Tarefa6"
+                    android:layout_marginTop="16dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/rcpc8_3v2_seletiva"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/OP1_tarefa6_startbutton"
+                        style="@style/BotaoStart"
+                        android:onClick="startTarefa6"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa6_pausebutton"
+                        style="@style/BotaoPause"
+                        android:onClick="pauseTarefa6"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa6_stopbutton"
+                        style="@style/BotaoStop"
+                        android:onClick="stopTarefa6"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <!-- LAYOUT DA TAREFA 7 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP1_Tarefa7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#FFFFFF"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- titulo da Tarefa7 -->
+                <TextView
+                    android:id="@+id/tituloOP1_Tarefa7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    android:text="Tarefa 20 - Rework Pós-Seletiva e Limpeza" />
+
+                <!-- login Text-->
+
+                <TextView
+                    android:id="@+id/logoutTextTarefa7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:id="@+id/barraOP1_Tarefa7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP1_Tarefa7"
+                    android:background="#212121" />
+
+                <!-- instruções de Tarefa 7 -->
+                <TextView
+                    android:id="@+id/rulesOP1_Tarefa7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/barraOP1_Tarefa7"
+                    style="@style/tiltleRulesText"
+                    android:text="Instruções: " />
+
+                <TextView
+                    android:id="@+id/rulesLeftOP1_Tarefa7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP1_Tarefa7"
+                    style="@style/rulesText"
+                    android:text="1º - Verificar soldadura, efetuar correção e fazer limpeza da mesma."
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/OP1_tarefa7_startbutton"
+                        style="@style/BotaoStart"
+                        android:onClick="startTarefa7"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa7_pausebutton"
+                        style="@style/BotaoPause"
+                        android:onClick="pauseTarefa7"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa7_stopbutton"
+                        style="@style/BotaoStop"
+                        android:onClick="stopTarefa7"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <!-- LAYOUT DA TAREFA 8 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP1_Tarefa8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#FFFFFF"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- titulo da Tarefa8 -->
+                <TextView
+                    android:id="@+id/tituloOP1_Tarefa8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    android:text="Tarefa 21 - Despainelizar" />
+
+                <!-- login Text-->
+
+                <TextView
+                android:id="@+id/logoutTextTarefa8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="120dp"
+                android:text=""
+                style="@style/loginText"
+                />
+
+                <!-- barra -->
+                <TextView
+                    android:id="@+id/barraOP1_Tarefa8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP1_Tarefa8"
+                    android:background="#212121" />
+
+                <!-- instruções de Tarefa 8 -->
+                <TextView
+                    android:id="@+id/rulesOP1_Tarefa8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/barraOP1_Tarefa8"
+                    style="@style/tiltleRulesText"
+                    android:text="Instruções: " />
+
+                <TextView
+                    android:id="@+id/rulesLeftOP1_Tarefa8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP1_Tarefa8"
+                    style="@style/rulesText"
+                    android:text="1º - Tirar cuidadosamente os bordos da placas com um alicate."
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/OP1_tarefa8_startbutton"
+                        style="@style/BotaoStart"
+                        android:onClick="startTarefa8"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa8_pausebutton"
+                        style="@style/BotaoPause"
+                        android:onClick="pauseTarefa8"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa8_stopbutton"
+                        style="@style/BotaoStop"
+                        android:onClick="stopTarefa8"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <!-- LAYOUT DA TAREFA 9 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP1_Tarefa9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#FFFFFF"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- titulo da Tarefa9 -->
+                <TextView
+                    android:id="@+id/tituloOP1_Tarefa9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    android:text="Tarefa 23 - Colocar etiqueta no modelo" />
+
+                <!-- login Text-->
+
+                <TextView
+                    android:id="@+id/logoutTextTarefa9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:id="@+id/barraOP1_Tarefa9"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP1_Tarefa9"
+                    android:background="#212121" />
+
+                <!-- instruções de Tarefa 9 -->
+                <TextView
+                    android:id="@+id/rulesOP1_Tarefa9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/barraOP1_Tarefa9"
+                    style="@style/tiltleRulesText"
+                    android:text="Instruções: " />
+
+                <TextView
+                    android:id="@+id/rulesLeftOP1_Tarefa9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP1_Tarefa9"
+                    style="@style/rulesText"
+                    android:text="1º - Colocar etiqueta no sítio destinado para tal, indicado na unidade."
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/OP1_tarefa9_startbutton"
+                        style="@style/BotaoStart"
+                        android:onClick="startTarefa9"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa9_pausebutton"
+                        style="@style/BotaoPause"
+                        android:onClick="pauseTarefa9"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa9_stopbutton"
+                        style="@style/BotaoStop"
+                        android:onClick="stopTarefa9"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <!-- LAYOUT DA TAREFA 10 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP1_Tarefa10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#FFFFFF"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- titulo da Tarefa10 -->
+                <TextView
+                    android:id="@+id/tituloOP1_Tarefa10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    android:text="Tarefa 24 – Realizar testes" />
+
+                <!-- login Text-->
+
+                <TextView
+                    android:id="@+id/logoutTextTarefa10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:id="@+id/barraOP1_Tarefa10"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP1_Tarefa10"
+                    android:background="#212121" />
+
+                <!-- instruções de Tarefa 10 -->
+                <TextView
+                    android:id="@+id/rulesOP1_Tarefa10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/barraOP1_Tarefa10"
+                    style="@style/tiltleRulesText"
+                    android:text="Instruções: " />
+
+                <TextView
+                    android:id="@+id/rulesLeftOP1_Tarefa10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP1_Tarefa10"
+                    style="@style/rulesText"
+                    android:text="1º - Seguir as instruções indicadas para a realização dos testes."
+                    />
+
+                <TextView
+                    android:id="@+id/rulesRightOP1_Tarefa10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesLeftOP1_Tarefa10"
+                    style="@style/rulesText"
+                    android:text="2º - Decidir destino: Rework, abate ou continuação do processo."
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/OP1_tarefa10_startbutton"
+                        style="@style/BotaoStart"
+                        android:onClick="startTarefa10"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa10_pausebutton"
+                        style="@style/BotaoPause"
+                        android:onClick="pauseTarefa10"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa10_stopbutton"
+                        style="@style/BotaoStop"
+                        android:onClick="stopTarefa10"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <!-- LAYOUT DA TAREFA 11 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP1_Tarefa11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#FFFFFF"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- titulo da Tarefa11 -->
+                <TextView
+                    android:id="@+id/tituloOP1_Tarefa11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    android:text="Tarefa 25 – Inspeção visual" />
+
+                <!-- login Text-->
+
+                <TextView
+                    android:id="@+id/logoutTextTarefa11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:id="@+id/barraOP1_Tarefa11"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP1_Tarefa11"
+                    android:background="#212121" />
+
+                <!-- instruções de Tarefa 11 -->
+                <TextView
+                    android:id="@+id/rulesOP1_Tarefa11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/barraOP1_Tarefa11"
+                    style="@style/tiltleRulesText"
+                    android:text="Instruções: " />
+
+                <TextView
+                    android:id="@+id/rulesLeftOP1_Tarefa11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP1_Tarefa11"
+                    style="@style/rulesText"
+                    android:text="1º - Verificar se existe alguma anomalia, placa a placa."
+                    />
+
+                <TextView
+                    android:id="@+id/rulesRightOP1_Tarefa11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesLeftOP1_Tarefa11"
+                    style="@style/rulesText"
+                    android:text="2º - Decidir destino: Rework, abate ou continuação do processo."
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/OP1_tarefa11_startbutton"
+                        style="@style/BotaoStart"
+                        android:onClick="startTarefa11"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa11_pausebutton"
+                        style="@style/BotaoPause"
+                        android:onClick="pauseTarefa11"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa11_stopbutton"
+                        style="@style/BotaoStop"
+                        android:onClick="stopTarefa11"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <!-- LAYOUT DA TAREFA 12 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP1_Tarefa12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#FFFFFF"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- titulo da Tarefa 12 -->
+                <TextView
+                    android:id="@+id/tituloOP1_Tarefa12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    android:text="Tarefa 28 - Embalamento"/>
+
+                <!-- login Text-->
+
+                <TextView
+                    android:id="@+id/logoutTextTarefa12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:id="@+id/barraOP1_Tarefa12"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP1_Tarefa12"
+                    android:background="#212121" />
+
+                <!-- instruções de Tarefa 12 -->
+                <TextView
+                    android:id="@+id/rulesOP1_Tarefa12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/barraOP1_Tarefa12"
+                    style="@style/tiltleRulesText"
+                    android:text="Instruções: " />
+
+                <TextView
+                    android:id="@+id/rulesLeftOP1_Tarefa12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP1_Tarefa12"
+                    style="@style/rulesText"
+                    android:text="Seguir instruções de embalamento referentes ao modelo respetivo."
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/OP1_tarefa12_startbutton"
+                        style="@style/BotaoStart"
+                        android:onClick="startTarefa12"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa12_pausebutton"
+                        style="@style/BotaoPause"
+                        android:onClick="pauseTarefa12"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/OP1_tarefa12_stopbutton"
+                        style="@style/BotaoStop"
+                        android:onClick="stopTarefa12"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

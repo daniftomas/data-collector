@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:background="#FFFFFF"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/logoutOPsButton"
+            style="@style/BotaoLogout"
+            android:onClick="logout"
+            android:text="logout" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#3F51B5">
+
+                <!-- info da exatronic-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:orientation="horizontal"
+                    android:background="#536DFE">
+
+                    <ImageView
+                        android:id="@+id/icon2"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:src="@drawable/exatronic_ico"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Produção"
+                        android:layout_gravity="bottom"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_com_OPs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/op1_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:onClick="showOP1"
+                        />
+                    <Button
+                        android:id="@+id/op2_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP2"
+                        android:visibility="gone"
+                        />
+
+                    <Button
+                        android:id="@+id/op3_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP3"
+                        android:visibility="visible"
+                        />
+
+                    <Button
+                        android:id="@+id/op4_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP4"
+                        android:visibility="visible"
+                        />
+
+
+
+
+
+                    <Button
+                        android:id="@+id/op7_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP7"
+                        android:visibility="visible"
+                        />
+                    <Button
+                        android:id="@+id/op8_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP8"
+                        android:visibility="visible"
+                        />
+
+                    <Button
+                        android:id="@+id/op6_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP6"
+                        android:visibility="visible"
+                        />
+
+                    <Button
+                        android:id="@+id/op5_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP5"
+                        android:visibility="visible"
+                        />
+
+                    <Button
+                        android:id="@+id/op9_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/BotaoTarefa"
+                        android:layout_marginTop="2dp"
+                        android:onClick="showOP9"
+                        android:visibility="visible"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- layout inicial e visível inicialmente-->
+            <RelativeLayout
+                android:id="@+id/layoutMainOP"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:background="#FFFFFF"
+                android:visibility="visible">
+
+                <!-- titulo do MainOP -->
+                <TextView
+                    android:id="@+id/tituloOP"
+                    android:text="Escolha uma OP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/logoutTextOP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    style="@style/loginText"
+                    android:text=""
+                    />
+
+
+                <!-- barra -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/barra"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP"
+                    android:background="#212121" />
+
+                <!-- instruções da escolha OP -->
+                <TextView
+                    android:id="@+id/rulesOP"
+                    android:text="->Modelo 1 \n \n->Modelo 2\n \n->Modelo 2 p/ agrupar\n \n->Modelo 3\n \n->Modelo 4\n \n->Modelo 5\n \n->Modelo 5 p/ agrupar\n \n ->Modelo 6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/barra"
+                    android:paddingTop="15dp"
+                    style="@style/rulesText"
+                    android:textSize="21sp"
+                    />
+
+            </RelativeLayout>
+
+            <!-- layout da OP1 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:visibility="gone">
+
+                <!-- titulo da OP1 -->
+                <TextView
+                    android:id="@+id/tituloOP1"
+                    android:text="Modelo 1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/logoutTextOP1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/barraOP1"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP1"
+                    android:background="#212121" />
+
+                <!-- instruções de OP1 -->
+                <TextView
+                    android:id="@+id/rulesOP1"
+                    android:text="Materiais: "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="8dp"
+                    style="@style/tiltleRulesText"
+                    android:layout_below="@id/barraOP1"
+                    />
+                <TextView
+                    android:id="@+id/rulesLeftOP1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP1"
+                    style="@style/rulesText"
+                    android:text="- 1 PCB Modelo 1 \n- 1 Componente A \n- 18 Componente B \n- 18 Componente C \n- 16 Componente D "
+                    />
+
+
+                <ImageView
+                    android:layout_width="980dp"
+                    android:layout_height="400dp"
+                    android:layout_below="@id/rulesLeftOP1"
+                    android:src="@drawable/rcpc8_3v2_menu"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+                <Button
+                    android:id="@+id/tarefasOP1"
+                    android:text="Tarefas"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    style="@style/BotaoTarefa"
+                    android:onClick="goToActivityTarefasOP1"
+                    />
+
+            </RelativeLayout>
+
+
+            <!-- layout da OP2 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:visibility="gone">
+
+                <!-- titulo da OP2 -->
+                <TextView
+                    android:id="@+id/tituloOP2"
+                    android:text=" "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/logoutTextOP2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/barraOP2"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP2"
+                    android:background="#212121" />
+
+                <!-- instruções de OP1 -->
+                <TextView
+                    android:id="@+id/rulesOP2"
+                    android:text="Materiais: "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="8dp"
+                    style="@style/tiltleRulesText"
+                    android:layout_below="@id/barraOP2"
+                    />
+                <TextView
+                    android:id="@+id/rulesLeftOP2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP2"
+                    style="@style/rulesText"
+                    android:text="- 1 PCB RC-PC8 3V2 \n- 1 Slide Switch \n- 18 Fichas Conn Block \n- 18 Fichas RJ45 \n- 16 Rotary Switch "
+                    />
+
+
+                <ImageView
+                    android:layout_width="500dp"
+                    android:layout_height="315dp"
+                    android:layout_below="@id/rulesLeftOP2"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp" />
+
+                <ImageView
+                    android:layout_width="500dp"
+                    android:layout_height="315dp"
+                    android:layout_below="@id/rulesLeftOP2"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="510dp" />
+
+
+                <Button
+                    android:id="@+id/tarefasOP2"
+                    android:text="Tarefas"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    style="@style/BotaoTarefa"
+                    android:onClick="goToActivityTarefasOP2"
+                    />
+
+            </RelativeLayout>
+
+
+            <!-- layout da OP3 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:visibility="gone">
+
+                <!-- titulo da OP3 -->
+                <TextView
+                    android:id="@+id/tituloOP3"
+                    android:text="RAQUITED 6 V2  "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/logoutTextOP3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/barraOP3"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP3"
+                    android:background="#212121" />
+
+                <!-- instruções de OP3 -->
+                <TextView
+                    android:id="@+id/rulesOP3"
+                    android:text="Materiais: "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="8dp"
+                    style="@style/tiltleRulesText"
+                    android:layout_below="@id/barraOP3"
+                    />
+                <TextView
+                    android:id="@+id/rulesLeftOP3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP3"
+                    style="@style/rulesText"
+                    android:text="- 1 PCB RAQUITED 6 V2 \n- 1 Slide Switch \n- 6 Rotary switch \n- 10 Fichas RJ45 \n- 16 Fichas PDB"
+                    />
+
+
+                <ImageView
+                    android:layout_width="980dp"
+                    android:layout_height="400dp"
+                    android:layout_below="@id/rulesLeftOP3"
+                    android:layout_marginTop="16dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/raquited6_v2_menu"/>
+
+
+                <Button
+                    android:id="@+id/tarefasOP3"
+                    android:text="Tarefas"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    style="@style/BotaoTarefa"
+                    android:onClick="goToActivityTarefasOP3"
+                    />
+
+            </RelativeLayout>
+
+            <!-- layout da OP4 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:visibility="gone">
+
+                <!-- titulo da OP4 -->
+                <TextView
+                    android:id="@+id/tituloOP4"
+                    android:text="RCPC 8 2V3 p/ agrupar "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/logoutTextOP4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/barraOP4"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP4"
+                    android:background="#212121" />
+
+                <!-- instruções de OP4 -->
+                <TextView
+                    android:id="@+id/rulesOP4"
+                    android:text="Materiais: "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="8dp"
+                    style="@style/tiltleRulesText"
+                    android:layout_below="@id/barraOP4"
+                    />
+                <TextView
+                    android:id="@+id/rulesLeftOP4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP4"
+                    style="@style/rulesText"
+                    android:text="- 1 PCB RC-PC 8 2V3 \n- 1 Slide Switch \n- 10 Fichas Conn Block \n- 11 Fichas RJ45 \n- 8 Rotary Switch "
+                    />
+
+
+                <ImageView
+                    android:layout_width="980dp"
+                    android:layout_height="400dp"
+                    android:layout_below="@id/rulesLeftOP4"
+                    android:src="@drawable/rcpc8_2v3agrupar_menu"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp" />
+
+
+
+                <Button
+                    android:id="@+id/tarefasOP4"
+                    android:text="Tarefas"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    style="@style/BotaoTarefa"
+                    android:onClick="goToActivityTarefasOP4"
+                    />
+
+            </RelativeLayout>
+
+            <!-- layout da OP5 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:visibility="gone">
+
+                <!-- titulo da OP5 -->
+                <TextView
+                    android:id="@+id/tituloOP5"
+                    android:text="RCPC 8 3V2 p/ agrupar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/logoutTextOP5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/barraOP5"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP5"
+                    android:background="#212121" />
+
+                <!-- instruções de OP5 -->
+                <TextView
+                    android:id="@+id/rulesOP5"
+                    android:text="Materiais: "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="8dp"
+                    style="@style/tiltleRulesText"
+                    android:layout_below="@id/barraOP5"
+                    />
+                <TextView
+                    android:id="@+id/rulesLeftOP5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP5"
+                    style="@style/rulesText"
+                    android:text="- 1 PCB RC-PC8 3V2 \n- 1 Slide Switch \n- 18 Fichas Conn Block \n- 19 Fichas RJ45 \n- 16 Rotary Switch "
+                    />
+
+
+                <ImageView
+                    android:layout_width="500dp"
+                    android:layout_height="315dp"
+                    android:layout_below="@id/rulesLeftOP5"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp" />
+
+                <ImageView
+                    android:layout_width="500dp"
+                    android:layout_height="315dp"
+                    android:layout_below="@id/rulesLeftOP5"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="510dp" />
+
+
+                <Button
+                    android:id="@+id/tarefasOP5"
+                    android:text="Tarefas"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    style="@style/BotaoTarefa"
+                    android:onClick="goToActivityTarefasOP5"
+                    />
+
+            </RelativeLayout>
+
+            <!-- layout da OP6 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:visibility="gone">
+
+                <!-- titulo da OP6 -->
+                <TextView
+                    android:id="@+id/tituloOP6"
+                    android:text="RCPC 6 2V3 "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/logoutTextOP6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/barraOP6"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP6"
+                    android:background="#212121" />
+
+                <!-- instruções de OP6 -->
+                <TextView
+                    android:id="@+id/rulesOP6"
+                    android:text="Materiais: "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="8dp"
+                    style="@style/tiltleRulesText"
+                    android:layout_below="@id/barraOP6"
+                    />
+                <TextView
+                    android:id="@+id/rulesLeftOP6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP6"
+                    style="@style/rulesText"
+                    android:text="- 1 PCB RC-PC 6 2V3 \n- 1 Slide Switch \n- 8 Conn Block \n- 8 Fichas RJ45 \n- 6 Rotary Switch "
+                    />
+
+
+
+                <ImageView
+                    android:layout_width="500dp"
+                    android:layout_height="315dp"
+                    android:layout_below="@id/rulesLeftOP6"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="510dp" />
+
+
+                <Button
+                    android:id="@+id/tarefasOP6"
+                    android:text="Tarefas"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    style="@style/BotaoTarefa"
+                    android:onClick="goToActivityTarefasOP6"
+                    />
+
+            </RelativeLayout>
+
+            <!-- layout da OP7 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:visibility="gone">
+
+                <!-- titulo da OP7 -->
+                <TextView
+                    android:id="@+id/tituloOP7"
+                    android:text="RCPC 8 2V3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/logoutTextOP7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/barraOP7"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP7"
+                    android:background="#212121" />
+
+                <!-- instruções de OP7 -->
+                <TextView
+                    android:id="@+id/rulesOP7"
+                    android:text="Materiais: "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="8dp"
+                    style="@style/tiltleRulesText"
+                    android:layout_below="@id/barraOP7"
+                    />
+                <TextView
+                    android:id="@+id/rulesLeftOP7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP7"
+                    style="@style/rulesText"
+                    android:text="- 1 PCB RC-PC 8 2V3 \n- 1 Slide Switch \n- 10 Fichas Conn Block \n- 10 Fichas RJ45 \n- 8 Rotary Switch "
+                    />
+
+
+                <ImageView
+                    android:layout_width="980dp"
+                    android:layout_height="400dp"
+                    android:layout_below="@id/rulesLeftOP7"
+                    android:src="@drawable/rcpc8_2v3_menu"
+                    android:layout_marginTop="16dp"
+                    android:layout_centerHorizontal="true" />
+
+
+                <Button
+                    android:id="@+id/tarefasOP7"
+                    android:text="Tarefas"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    style="@style/BotaoTarefa"
+                    android:onClick="goToActivityTarefasOP7"
+                    />
+
+            </RelativeLayout>
+
+            <!-- layout da OP8 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:visibility="gone">
+
+                <!-- titulo da OP8 -->
+                <TextView
+                    android:id="@+id/tituloOP8"
+                    android:text="RCPC 12 3V2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/logoutTextOP8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/barraOP8"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP8"
+                    android:background="#212121" />
+
+                <!-- instruções de OP8 -->
+                <TextView
+                    android:id="@+id/rulesOP8"
+                    android:text="Materiais: "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="8dp"
+                    style="@style/tiltleRulesText"
+                    android:layout_below="@id/barraOP8"
+                    />
+                <TextView
+                    android:id="@+id/rulesLeftOP8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP8"
+                    style="@style/rulesText"
+                    android:text="- 1 PCB RC-PC 12 3V2 \n- 1 Slide Switch \n- 26 Fichas Conn Block \n- 26 Fichas RJ45 \n- 24 Rotary Switch "
+                    />
+
+
+                <ImageView
+                    android:layout_width="980dp"
+                    android:layout_height="400dp"
+                    android:layout_below="@id/rulesLeftOP8"
+                    android:src="@drawable/rcpc12_2v3_menu"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp" />
+
+
+
+                <Button
+                    android:id="@+id/tarefasOP8"
+                    android:text="Tarefas"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    style="@style/BotaoTarefa"
+                    android:onClick="goToActivityTarefasOP8"
+                    />
+            </RelativeLayout>
+
+            <!-- layout da OP9 -->
+            <RelativeLayout
+                android:id="@+id/layoutOP9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:visibility="gone">
+
+                <!-- titulo da OP9 -->
+                <TextView
+                    android:id="@+id/tituloOP9"
+                    android:text="RCPC 6 3V2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/logoutTextOP9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:text=""
+                    style="@style/loginText"
+                    />
+
+                <!-- barra -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/barraOP9"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tituloOP9"
+                    android:background="#212121" />
+
+                <!-- instruções de OP9 -->
+                <TextView
+                    android:id="@+id/rulesOP9"
+                    android:text="Materiais: "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="8dp"
+                    style="@style/tiltleRulesText"
+                    android:layout_below="@id/barraOP9"
+                    />
+                <TextView
+                    android:id="@+id/rulesLeftOP9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rulesOP9"
+                    style="@style/rulesText"
+                    android:text="- 1 PCB RC-PC 6 3V2 \n- 1 Slide Switch \n- 14 Fichas Conn Block \n- 14 Fichas RJ45 \n- 12 Rotary Switch "
+                    />
+
+
+                <ImageView
+                    android:layout_width="980dp"
+                    android:layout_height="400dp"
+                    android:layout_below="@id/rulesLeftOP9"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp" />
+
+
+                <Button
+                    android:id="@+id/tarefasOP9"
+                    android:text="Tarefas"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    style="@style/BotaoTarefa"
+                    android:onClick="goToActivityTarefasOP9"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

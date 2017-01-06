@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.exatronic.Registo"
+    android:background="#FFFFFF">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/logoutRegistoButton"
+        style="@style/BotaoLogout"
+        android:onClick="logout"
+        android:text="logout"
+        android:visibility="invisible"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#3F51B5"
+            >
+
+            <!-- info da exatronic-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:orientation="horizontal"
+                android:background="#536DFE">
+
+                <ImageView
+                    android:id="@+id/icon2"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:src="@drawable/exatronic_ico"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Produção"
+                    android:layout_gravity="bottom"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_com_TarefasOP1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/OPbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/BotaoTarefa"
+                    android:onClick="voltarOP"
+                    android:text=""
+                    android:background="#FFFFFF"
+                    />
+
+                <Button
+                    android:id="@+id/buttonRegistoTarefa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/BotaoTarefa"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!-- LAYOUT Registo -->
+        <RelativeLayout
+            android:id="@+id/layout_registo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:visibility="visible">
+
+            <!-- titulo das Tarefas -->
+            <TextView
+                android:id="@+id/titulo_registo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                style="@style/TextAppearance.AppCompat.Display1"
+                android:text="Registo" />
+
+            <TextView
+                android:id="@+id/logoutRegistoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="120dp"
+                style="@style/loginText"
+                android:text=""
+                />
+
+            <!-- barra -->
+            <TextView
+                android:id="@+id/barra_registo"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/titulo_registo"
+                android:background="#212121"
+                android:layout_marginBottom="10dp"
+                />
+
+            <!-- introduçao de registos -->
+            <!-- produção -->
+            <TextView
+                android:id="@+id/registo_tarefa"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/barra_registo"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="5dp"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:textSize="25sp"
+                android:textColor="#727272"
+                />
+
+
+            <TextView
+                android:id="@+id/registo_horaInicio"
+                android:text="Começou: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registo_tarefa"
+                android:layout_margin="16dp"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:textColor="#727272"
+                />
+
+            <TextView
+                android:id="@+id/edit_horas_inicio"
+                android:hint="horas"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registo_tarefa"
+                android:layout_toRightOf="@+id/registo_horaInicio"
+                android:layout_marginLeft="8dp"
+                android:textSize="15sp"
+                android:textColor="#727272"
+                />
+
+            <TextView
+                android:id="@+id/registo_horaFim"
+                android:text="Acabou: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registo_tarefa"
+                android:layout_toRightOf="@id/edit_horas_inicio"
+                android:layout_margin="16dp"
+                android:paddingLeft="20dp"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:textColor="#727272"
+                />
+
+            <TextView
+                android:id="@+id/edit_horas_fim"
+                android:hint="horas"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registo_tarefa"
+                android:layout_toRightOf="@+id/registo_horaFim"
+                android:layout_marginLeft="8dp"
+                android:textSize="15sp"
+                android:textColor="#727272"
+                />
+
+            <TextView
+                android:id="@+id/registo_quantidade"
+                android:text="Quantidade: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registo_horaInicio"
+                android:layout_margin="16dp"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:textColor="#727272"
+                 />
+
+
+
+            <EditText
+                android:id="@+id/edit_quantidade"
+                android:hint="0"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registo_horaInicio"
+                android:layout_toRightOf="@+id/registo_quantidade"
+                android:layout_toEndOf="@+id/registo_quantidade" />
+
+            <TextView
+                android:id="@+id/unidades_quantidade"
+                android:hint="unidades"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registo_horaInicio"
+                android:layout_toRightOf="@+id/edit_quantidade"
+                android:layout_marginLeft="8dp"
+                android:textSize="15sp"
+                android:textColor="#727272"
+                />
+
+            <!--  caixa check de seletiva -->
+
+            <CheckBox
+                android:id="@+id/seletiva_checkbox"
+                android:text="Operação Seletiva em simultâneo "
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#727272"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="30dp"
+                android:layout_alignTop="@+id/barra_registo"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+
+                />
+
+
+            <!-- introduçao anomalias -->
+            <TextView
+                android:id="@+id/registo_anomalias"
+                android:text="Anomalias: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registo_quantidade"
+                android:layout_margin="16dp"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:textColor="#727272"
+                 />
+
+
+
+            <EditText
+                android:id="@+id/edit_anomalias"
+                android:hint="0"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/registo_anomalias"
+                android:layout_alignLeft="@+id/edit_quantidade"
+                android:layout_alignStart="@+id/edit_quantidade" />
+
+            <TextView
+                android:id="@+id/unidades_anomalias"
+                android:hint="unidades"
+                android:layout_marginTop="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/unidades_quantidade"
+                android:layout_toRightOf="@+id/edit_anomalias"
+                android:layout_marginLeft="8dp"
+                android:textSize="15sp"
+                android:textColor="#727272"
+                />
+
+
+            <CheckBox
+                android:id="@+id/causa1_checkbox"
+                android:text="Defeito na matéria prima"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#727272"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="40dp"
+                android:layout_below="@id/registo_anomalias"
+                />
+
+            <CheckBox
+                android:id="@+id/causa2_checkbox"
+                android:text="Problema proveniente de tarefas anteriores"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#727272"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="40dp"
+                android:layout_below="@id/causa1_checkbox" />
+
+            <CheckBox
+                android:id="@+id/causa3_checkbox"
+                android:text="Outro"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#727272"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="40dp"
+                android:layout_below="@id/causa2_checkbox" />
+
+            <!-- observações -->
+            <TextView
+                android:text="Observações:"
+                android:id="@+id/registo_observacoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/causa3_checkbox"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:textColor="#727272"/>
+
+            <EditText
+                android:id="@+id/edit_observacoes"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="40dp"
+                android:layout_below="@id/registo_observacoes"
+                android:layout_marginLeft="16dp"
+                />
+
+            <TextView
+                android:id="@+id/tempo_pausa_maior"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_observacoes"
+                android:layout_margin="16dp"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:textSize="25sp"
+                android:textColor="#D32F2F"
+                />
+
+            <Button
+                android:text="Registar"
+                android:id="@+id/registo"
+                style="@style/BotaoTarefa"
+                android:layout_alignParentBottom="true"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                android:onClick="fazRegisto" />
+
+            <TextView
+                android:id="@+id/registo_textView"
+                style="@style/BotaoTarefa"
+                android:background="#FFFFFF"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_height="80dp"
+                android:text="Registado"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/experiment"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>
+</LinearLayout>
+
+
+

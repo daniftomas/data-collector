@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.experiment.MainActivity"
+    android:orientation="vertical"
+    android:background="#000000"
+    >
+
+    <ImageView
+        android:layout_width="1000dp"
+        android:layout_height="100dp"
+        android:paddingLeft="2dp"
+        android:layout_marginBottom="4dp"
+        android:layout_above="@id/image"
+        android:src="@drawable/exatronic"
+        android:scaleType="centerCrop"
+        />
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:src="@drawable/login"
+        android:scaleType="centerCrop"
+        />
+
+
+    <Button
+        android:id="@+id/colabB"
+        style="@style/BotaoLogin"
+        android:text="Sérgio"
+        android:onClick="colabB"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:id="@+id/colabA"
+        style="@style/BotaoLogin"
+        android:text="Lurdes"
+        android:onClick="colabA"
+        android:layout_above="@id/colabB"
+
+        />
+    <Button
+        android:id="@+id/colabD"
+        style="@style/BotaoLogin"
+        android:text="Paula"
+        android:onClick="colabD"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/colabB"
+        />
+
+    <Button
+        android:id="@+id/colabC"
+        style="@style/BotaoLogin"
+        android:text="Ana Paula"
+        android:onClick="colabC"
+        android:layout_above="@id/colabD"
+        android:layout_toRightOf="@id/colabA"
+        />
+
+    <Button
+        android:id="@+id/colabF"
+        style="@style/BotaoLogin"
+        android:text="Ana"
+        android:onClick="colabF"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/colabD"
+        />
+
+    <Button
+        android:id="@+id/colabE"
+        style="@style/BotaoLogin"
+        android:text="Rúben"
+        android:onClick="colabE"
+        android:layout_toRightOf="@id/colabC"
+        android:layout_above="@id/colabF"
+       />
+
+
+    <Button
+        android:id="@+id/colabH"
+        style="@style/BotaoLogin"
+        android:text="Ana"
+        android:onClick="colabH"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/colabF"
+        />
+
+    <Button
+        android:id="@+id/colabG"
+        style="@style/BotaoLogin"
+        android:text="Ana"
+        android:onClick="colabG"
+        android:layout_toRightOf="@id/colabE"
+        android:layout_above="@id/colabH"
+        />
+
+    <Button
+        android:id="@+id/colabJ"
+        style="@style/BotaoLogin"
+        android:text="Ana"
+        android:onClick="colabJ"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/colabH"
+        />
+
+    <Button
+        android:id="@+id/colabI"
+        style="@style/BotaoLogin"
+        android:text="Ana"
+        android:onClick="colabI"
+        android:layout_toRightOf="@id/colabG"
+        android:layout_above="@id/colabJ"
+        />
+
+    <Button
+        android:id="@+id/colabK"
+        style="@style/BotaoLogin"
+        android:text="Ana"
+        android:onClick="colabK"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/colabJ"
+        />
+
+</RelativeLayout>
